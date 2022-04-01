@@ -1,0 +1,140 @@
+* {
+	box-sizing : border-box;
+	margem :  0 ;
+	preenchimento :  0 ;
+}
+
+corpo {
+	altura :  100 vh ;
+	largura :  100 % ;
+	font-family :  'Roboto' , sem serifa;
+	fundo :  # f5f7fa ;
+}
+
+/* Barra de navegação */
+. barra de navegação {
+	exibição : flexível;
+	preenchimento :  10 px  0 ;
+	justificar-conteúdo : espaço ao redor;
+	largura :  100 % ;
+	altura :  44px ; _
+}
+
+. barra de navegação  {
+	tamanho da fonte :  1,5 rem ;
+	cor :  # dadfe6 ;
+}
+
+. navbar  i : enésimo filho ( 1 ) {
+	cor :  # fe466d ;
+}
+
+. foto-e-ações {
+	altura :  calc ( 100 vh  -  44 px );
+	exibição : flexível;
+	flex-direction : coluna;
+	align-items : centro;
+}
+
+/* Foto */
+. foto {
+	largura :  98 vw ;
+	altura :  85 vh ;
+	background :  url ( '../img/girl.jpeg' ) center center/cover;
+	raio da borda :  10 px ;
+	exibição : flexível;
+	align-items : flex-end;
+	cor :  #eee ; _
+	box-shadow :  0  2 px  10 px  0  rgba ( 136 ,  136 ,  136 ,  0,77 );
+}
+
+. foto-texto {
+	preenchimento :  15px ; _
+	fundo :  rgb ( 2 ,  0 ,  36 );
+	fundo :  rgb ( 2 ,  0 ,  36 );
+	fundo :  gradiente linear (
+		180 graus ,
+		rgba ( 2 ,  0 ,  36 ,  1 ) 0 % ,
+		rgba ( 35 ,  34 ,  65 ,  0 ) 0 % ,
+		rgba ( 0 ,  0 ,  0 ,  0,7 ) 52 %
+	);
+	raio da borda :  10 px ;
+}
+
+. foto-nome-e-idade {
+	exibição : flexível;
+	align-items : centro;
+	margem inferior :  6 px ;
+}
+
+. foto-nome-e-idade  h2 {
+	tamanho da fonte :  1,8 rem ;
+}
+
+. foto-nome-e-idade  h2 : enésimo filho ( 2 ) {
+	margem esquerda :  10 px ;
+	peso da fonte :  500 ;
+}
+
+. foto-biografia {
+	altura da linha :  1,7 rem ;
+	peso da fonte :  500 ;
+	tamanho da fonte :  1,1 rem ;
+}
+
+/* Ações */
+. ações {
+	flexível : automático;
+	exibição : flexível;
+	align-items : centro;
+	margem :  1 rem  0 ;
+}
+
+. ação {
+	exibição : flexível;
+	align-items : centro;
+	justificar-conteúdo : centro;
+	fundo :  #fff ; _
+	altura :  60px ; _
+	largura :  60px ; _
+	raio de borda :  50 % ;
+	tamanho da fonte :  2 rem ;
+	box-shadow :  0  2 px  6 px  0  rgba ( 112 ,  125 ,  134 ,  0,14 );
+}
+
+. ações . ação : enésimo filho ( 1 ) {
+	cor :  # fd5068 ;
+}
+
+. ações . ação : enésimo filho ( 2 ) {
+	altura :  48px ; _
+	largura :  48px ; _
+	tamanho da fonte :  1,5 rem ;
+	margem :  0  1 rem ;
+	cor :  # 2db1ff ;
+}
+
+. ações . ação : enésimo filho ( 3 ) {
+	cor :  # 1be4a1 ;
+}
+
+/* 1025px ou mais */
+@media ( largura mínima :  1025 px ) {
+	. foto {
+		largura :  367px ; _
+		altura :  684px ; _
+	}
+
+	. ações {
+		flex : inicial;
+	}
+
+	. foto-e-ações {
+		justificar-conteúdo : centro;
+	}
+
+	. barra de navegação {
+		largura :  400px ; _
+		margem : automático;
+	}
+}
